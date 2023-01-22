@@ -1,167 +1,247 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Exposiciones · La Galería Ecléctica</title>
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
-    <body class="expo-detalle">
-        <header class="bg-verde-oscuro">
-            <div class="cabecera-top">
-                <div>
-                    <a href="donar.html">Donaciones</a>
-                </div>
-                <div>
-                    <a href="#">ES</a>
-                    <a href="#">CA</a>
-                    <a href="#">EN</a>
-                </div>
-            </div>
-            <a href="index.html">
-                <img src="assets/img/logo.png" />
+  <head>
+    <meta charset="UTF-8" lang="es" />
+    <title>Exposiciones · La Galería Ecléctica</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="expo-detalle">
+    <noscript>
+      ¡Activa JavaScript para usar está página con todo su potencial!
+    </noscript>
+    <header class="bg-verde-oscuro">
+      <div class="cabecera-top">
+        <div>
+          <a href="donar.html">Donaciones</a>
+        </div>
+        <div>
+          <!-- TODO: Make it a list-->
+          <a href="#">ES</a>
+          <a href="#">CA</a>
+          <a href="#">EN</a>
+        </div>
+      </div>
+      <a href="index.html">
+        <!-- TODO: Add alt -->
+        <img src="assets/img/logo.png" />
+      </a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-verde-claro">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <!-- TODO: Make list and fix links-->
+            <a class="nav-item nav-link" href="#">Colección </a>
+            <a class="nav-item nav-link" href="exposiciones.html">
+              Exposiciones
             </a>
-            <nav class="navbar navbar-expand-lg navbar-light bg-verde-claro">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="#">Colección </a>
-                        <a class="nav-item nav-link" href="exposiciones.html">Exposiciones</a>
-                        <a class="nav-item nav-link" href="#">Actividades</a>
-                        <a class="nav-item nav-link" href="#">Revista</a>
-                    </div>
-                </div>
-            </nav>
-            <nav>
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                    <li class="breadcrumb-item"><a href="exposiciones.html">Exposiciones</a> </li>
-                    <li class="breadcrumb-item">Impresiones</li>
-                </ol>
-            </nav>
+            <a class="nav-item nav-link" href="#">Actividades</a>
+            <a class="nav-item nav-link" href="#">Revista</a>
+          </div>
+        </div>
+      </nav>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+          <li class="breadcrumb-item">
+            <a href="exposiciones.html">Exposiciones</a>
+          </li>
+          <li class="breadcrumb-item">Impresiones</li>
+        </ol>
+      </nav>
+    </header>
 
-        </header>
+    <main class="container-fluid">
+      <section class="detalle-cabecera">
+        <div class="container">
+          <h1>Impresiones</h1>
+          <h2>Mirar a Degas: la captura del instante</h2>
+          43
+        </div>
+      </section>
 
-        <main class="container-fluid">
-            <section class="detalle-cabecera">
-                <div class="container">
-                    <h1>Impresiones</h1>
-                    <h2> Mirar a Degas: la captura del instante</h2>43
-                </div>
-            </section>
+      <section id="proximas" class="actividades container">
+        <div class="fila align-izquierda">
+          <div class="tres-columnas">
+            <!--TODO: Add time-->
+            <h4>Del 2 de diciembre de 2018 hasta el 17 de abril de 2019</h4>
+            <button class="btn btn-secondary">Comprar entradas</button>
+          </div>
+          <div class="dos-tres-columnas">
+            <blockquote class="blockquote">
+              <p class="mb-0">
+                Es bueno copiar lo que se ve, pero es mucho mejor pintar lo que
+                queda en nuestra memoria después de ver algo. Se trata de una
+                transformación en donde la imaginación y la memoria trabajan
+                juntas. Sólo se puede reproducir algo que nos golpeó, es decir,
+                sólo lo esencial.
+              </p>
+              <footer class="blockquote-footer">
+                <cite>Edgar Degas</cite>
+              </footer>
+            </blockquote>
+            <p>
+              Hilaire-Germain-Edgar de Gas, más conocido como Edgar Degas
+              <!--TODO:Add time-->
+              (París, 19 de julio de 1834-ibídem, 27 de septiembre de 1917), fue
+              un pintor y escultor francés. Considerado uno de los fundadores
+              del Impresionismo, aunque él mismo rechazaba el nombre y prefería
+              llamarlo realismo o arte realista, Degas fue uno de los grandes
+              dibujantes de la historia por su magistral captación de las
+              sensaciones de vida y movimiento, especialmente en sus obras de
+              bailarinas, carreras de caballos y desnudos. Sus retratos son muy
+              apreciados por la complejidad psicológica y sensación de verdad
+              que transmiten. Durante su vida, la recepción pública de las obras
+              de Degas osciló entre la admiración y el rechazo. En sus inicios,
+              durante su fase "clasicista" Degas llevó muchas obras al Salón de
+              París entre 1865 y 1870. Poco después, Degas se une a los
+              impresionistas y rechaza las reglas rígidas y el elitismo del
+              Salón; del mismo modo, el Salón y el público en general rechazaron
+              su viraje al Impresionismo. Reconocido como uno de los artistas
+              más importantes de la época, Degas es considerado actualmente como
+              uno de los fundadores del Impresionismo. Aunque en muchos
+              aspectos, sobre todo en la teoría y en ciertas técnicas, la
+              pintura de Degas chocaba con el grupo impresionista, su sentido
+              del color, de las formas en movimiento, de la luz y las
+              composiciones dinámicas no solamente inspiraron a otros miembros
+              del grupo, sino que de algún modo fueron una de las cimas de este
+              movimiento pictórico. Fuente:
+              <a
+                href="https://es.wikipedia.org/wiki/Edgar_Degas"
+                target="_blank"
+                >Wikipedia</a
+              >
+            </p>
+            <p>
+              Esta exposición incluye muchas de las obras que nos ha legado el
+              genial pintor.
+            </p>
+            <p>
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/iSFDQKXMtMo"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              >
+              </iframe>
 
-            <section id="proximas" class="actividades container">
-                <div class="fila align-izquierda">
-                    <div class="tres-columnas">
-                        <h4>Del 2 de diciembre de 2018 hasta el 17 de abril de 2019</h4>
-                        <button class="btn btn-secondary">Comprar entradas</button>
-                    </div>
-                    <div class="dos-tres-columnas">
-                        <blockquote class="blockquote">
-                            <p class="mb-0">
-                                Es bueno copiar lo que se ve, pero es mucho mejor pintar lo que queda en nuestra memoria después de ver algo.
-                                Se trata de una transformación en donde la imaginación y la memoria trabajan juntas.
-                                Sólo se puede reproducir algo que nos golpeó, es decir, sólo lo esencial. 
-                            </p>
-                            <footer class="blockquote-footer"> <cite>Edgar Degas</cite></footer>
-                        </blockquote>
-                        <p>
-                            Hilaire-Germain-Edgar de Gas, más conocido como Edgar Degas (París, 19 de julio de 1834-ibídem, 27 de septiembre de 1917),
-                            fue un pintor y escultor francés. Considerado uno de los fundadores del Impresionismo, aunque él mismo rechazaba el nombre y prefería llamarlo realismo o arte realista,
-                            Degas fue uno de los grandes dibujantes de la historia por su magistral captación de las sensaciones de vida y movimiento, especialmente en sus obras de bailarinas, carreras de caballos y desnudos.
-                            Sus retratos son muy apreciados por la complejidad psicológica y sensación de verdad que transmiten. Durante su vida,
-                            la recepción pública de las obras de Degas osciló entre la admiración y el rechazo. En sus inicios, durante su fase "clasicista" Degas llevó muchas obras al Salón de París entre 1865 y 1870.
-                            Poco después, Degas se une a los impresionistas y rechaza las reglas rígidas y el elitismo del Salón; del mismo modo, el Salón y el público en general rechazaron su viraje al Impresionismo. 
-                            Reconocido como uno de los artistas más importantes de la época, Degas es considerado actualmente como uno de los fundadores del Impresionismo.​
-                            Aunque en muchos aspectos, sobre todo en la teoría y en ciertas técnicas, la pintura de Degas chocaba con el grupo impresionista, su sentido del color, de las formas en movimiento, de la luz y las composiciones dinámicas no solamente inspiraron a otros miembros del grupo, sino que de algún modo fueron una de las cimas de este movimiento pictórico. 
-                            Fuente: <a href="https://es.wikipedia.org/wiki/Edgar_Degas" target="_blank">Wikipedia</a>
-                        </p>
-                        <p>
-                             Esta exposición incluye muchas de las obras que nos ha legado el genial pintor.
-                        </p>
-                        <p>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/iSFDQKXMtMo" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                             Animación inspirada por La clase de danza de Edgar Degas.
-                            The Metropolitan Museum of Art
-                        </p>
+              Animación inspirada por La clase de danza de Edgar Degas.
+              <!--TODO:Add language-->
+              The Metropolitan Museum of Art
+            </p>
 
-                        <table class="table table-light">
-                            <tr class="bg-verde-oscuro">
-                                <th colspan="2">Obra mostrada en esta página</th>
-                            </tr>
-                            <tr>
-                                <th>Título</th>
-                                <td>Las Bailarinas</td>
-                            </tr>
-                            <tr>
-                                <th>Artista</th>
-                                <td>Edgar Degas</td>
-                            </tr>
-                            <tr>
-                                <th>Técnica</th>
-                                <td>Pastel y carboncillo sobre papel</td>
-                            </tr>
-                            <tr>
-                                <th>Dimensiones</th>
-                                <td>71.1 x 59.1 cm</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </section>
-        </main>
+            <table class="table table-light">
+              <tr class="bg-verde-oscuro">
+                <th colspan="2">Obra mostrada en esta página</th>
+              </tr>
+              <tr>
+                <th>Título</th>
+                <td>Las Bailarinas</td>
+              </tr>
+              <tr>
+                <th>Artista</th>
+                <td>Edgar Degas</td>
+              </tr>
+              <tr>
+                <th>Técnica</th>
+                <td>Pastel y carboncillo sobre papel</td>
+              </tr>
+              <tr>
+                <th>Dimensiones</th>
+                <td>71.1 x 59.1 cm</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
 
-        <footer class="container-fluid">
-            <div class="container pie">
-                <h4>La Galería Ecléctica</h4>
-                <a href="#">
-                    Plaza del Poblenou, 1 <br>
-                    08018 Barcelona
-                </a>
-                <div class="rrss">
-                    <a href="#"><i class="fab fa-facebook-square"></i></a>
-                    <a href="#"><i class="fab fa-twitter-square"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube-square"></i></a>
-                </div>
-                <form>
-                    <h4>Suscríbete a nuestra Newsletter</h4>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Enter email">
-                    </div>
-                    <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input">
-                        <label>Acepto la <a href="#">Política de privacidad </a></label>
-                    </div>
-                    <button type="submit" class="btn btn-secondary">Registrarme</button>
-                </form>
-                <a href="index.html" class="logo">
-                    <img src="assets/img/logo.png"/>
-                </a>
-                <nav class="navbar navbar-expand-lg navbar-light bg-verde-claro">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="#">Quiénes somos</a>
-                        <a class="nav-item nav-link" href="#">Política de Privacidad</a>
-                        <a class="nav-item nav-link" href="#">Aviso Legal</a>
-                        <a class="nav-item nav-link" href="#">Cookies</a>
-                    </div>
-                </nav>
-            </div>
-            <div class="creditos">
-                <h6>Créditos</h6>
-                <p>© LAGaEC. Imágenes de las obras artísticas de dominio público,
-                    <a href="https://www.metmuseum.org/art/collection/search#!?searchField=All&showOnly=openAccess&sortBy=relevance&offset=0&pageSize=0">The Metropolitan Museum</a>.
-                    Fotografías, <a href="https://unsplash.com">Unsplash</a>
-                    Actividad para comprobar la Accesibilidad Web, para el módulo de Diseño de Interfaces Web.
-                    IES Rafael Alberti - 2022/2023</p>
-            </div>
-        </footer>
+    <footer class="container-fluid">
+      <div class="container pie">
+        <h4>La Galería Ecléctica</h4>
+        <!--TODO: Make adress-->
+        <a href="#">
+          Plaza del Poblenou, 1<br />
+          08018 Barcelona
+        </a>
+        <div class="rrss">
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-twitter-square"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube-square"></i></a>
+        </div>
+        <form>
+          <!--TODO: Cambiar idioma -->
+          <h4>Suscríbete a nuestra Newsletter</h4>
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Enter email"
+            />
+            <!--TODO: Cambiar idioma del placeholder-->
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" />
+            <label>Acepto la <a href="#">Política de privacidad </a></label>
+          </div>
+          <button type="submit" class="btn btn-secondary">Registrarme</button>
+        </form>
+        <a href="index.html" class="logo">
+          <img src="assets/img/logo.png" />
+        </a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-verde-claro">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Quiénes somos</a>
+            <a class="nav-item nav-link" href="#">Política de Privacidad</a>
+            <a class="nav-item nav-link" href="#">Aviso Legal</a>
+            <a class="nav-item nav-link" href="#">Cookies</a>
+          </div>
+        </nav>
+      </div>
+      <div class="creditos">
+        <h5>Créditos</h5>
+        <p>
+          <!-- TODO: Añadir abreviación -->
+          © LAGaEC. Imágenes de las obras artísticas de dominio público,
+          <a
+            href="https://www.metmuseum.org/art/collection/search#!?searchField=All&showOnly=openAccess&sortBy=relevance&offset=0&pageSize=0"
+          >
+            <!-- TODO: Cambiar idioma-->
+            The Metropolitan Museum</a
+          >. Fotografías, <a href="https://unsplash.com">Unsplash</a> Actividad
+          para comprobar la Accesibilidad Web, para el módulo de Diseño de
+          Interfaces Web.
+          <!-- TODO: Añadir abreviación -->
+          IES Rafael Alberti - 2022/2023
+        </p>
+      </div>
+    </footer>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-        <script src="assets/bootstrap/js/bootstrap.js"></script>
-    </body>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/bootstrap/js/bootstrap.js"></script>
+  </body>
 </html>

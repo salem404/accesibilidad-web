@@ -1,166 +1,244 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" lang="es" />
     <title>Inicio · La Galería Ecléctica</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-<header class="bg-verde-oscuro">
-    <div class="cabecera-top">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <noscript>
+      ¡Activa JavaScript para usar está página con todo su potencial!
+    </noscript>
+    <header class="bg-verde-oscuro">
+      <div class="cabecera-top">
         <div><a href="donar.html">Donaciones</a></div>
         <div>
-            <a href="#">ES</a>
-            <a href="#">CA</a>
-            <a href="#">EN</a>
+          <!-- TODO: Make it a list-->
+          <a href="#">ES</a>
+          <a href="#">CA</a>
+          <a href="#">EN</a>
         </div>
-    </div>
-    <a href="index.html">
-        <img src="assets/img/logo.png"/>
-    </a>
-    <nav class="navbar navbar-expand-lg navbar-light bg-verde-claro">
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavAltMarkup">
-            <span class="navbar-toggler-icon"></span>
+      </div>
+      <a href="index.html">
+        <!-- TODO: Add alt -->
+        <img src="assets/img/logo.png" />
+      </a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-verde-claro">
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="#">Colección</a>
-                <a class="nav-item nav-link" href="exposiciones.html">Exposiciones</a>
-                <a class="nav-item nav-link" href="#">Actividades</a>
-                <a class="nav-item nav-link" href="#">Revista</a>
-            </div>
+          <div class="navbar-nav">
+            <!-- TODO: Make list and fix links-->
+            <a class="nav-item nav-link" href="#">Colección</a>
+            <a class="nav-item nav-link" href="exposiciones.html">
+              Exposiciones
+            </a>
+            <a class="nav-item nav-link" href="#">Actividades</a>
+            <a class="nav-item nav-link" href="#">Revista</a>
+          </div>
         </div>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<main class="container-fluid">
-    <section class="exposiciones container">
-        <h2> Exposiciones actuales</h2>
+    <main class="container-fluid">
+      <section class="exposiciones container">
+        <h2>Exposiciones actuales</h2>
         <div class="fila">
-            <div class="dos-columnas">
-                <a href="expo-detalle.html">
-                    <img src="assets/img/expo-cezanne.jpg"/>
-                </a>
-                <a href="expo-detalle.html"><h3>Impresiones </h3></a>
-                <p>Hasta abril de 2019</p>
-            </div>
-            <div class="dos-columnas">
-                <a href="#">
-                    <img src="assets/img/expo-caravaggio.jpg"/>
-                </a>
-                <a href="#"> <h3>Caravaggio: el pintor del claroscuro </h3></a>
-                <p>Hasta mayo de 2019</p>
-            </div>
+          <div class="dos-columnas">
+            <!-- TODO: Combine -->
+            <a href="expo-detalle.html">
+              <img src="assets/img/expo-cezanne.jpg" />
+            </a>
+            <a href="expo-detalle.html"><h3>Impresiones</h3></a>
+            <!-- TODO: Make date -->
+            <p>Hasta abril de 2019</p>
+          </div>
+          <div class="dos-columnas">
+            <a href="#">
+              <img src="assets/img/expo-caravaggio.jpg" />
+            </a>
+            <a href="#">
+              <!-- TODO: Add language-->
+              <h3>Caravaggio: el pintor del claroscuro</h3>
+            </a>
+            <p>Hasta mayo de 2019</p>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="actividades container">
-        <h2> Exposiciones actuales</h2>
+      <section class="actividades container">
+        <!-- TODO: Change heading-->
+        <h2>Exposiciones actuales</h2>
         <div class="fila">
-            <div class="tres-columnas">
-                <img src="assets/img/activ-guide.jpg"/>
-                <h3>Visita guiada a la colección de LAGaEC </h3>
-                <p>Jueves a las 12 h. Sábados a las 10 h. Actividad gratuita con inscripción previa</p>
-            </div>
-            <div class="tres-columnas">
-                <img src="assets/img/activ-arts.jpg"/>
-                <h3>Experiencias creativas </h3>
-                <p>Del 2 de enero al 25 de junio de 2019. Actividad gratuita con inscripción previa</p>
-            </div>
-            <div class="tres-columnas">
-                <img src="assets/img/activ-conf.jpg"/>
-                <h3>Cita con los expertos</h3>
-                <p>Del 7 de enero al 1 de julio de 2019 (cada primer lunes de mes). Conferencias gratuitas con inscripción previa</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="planifica-visita container">
-        <h2> Planifica tu visita</h2>
-        <div class="fila">
-            <div class="dos-columnas">
-                <h3>Horario</h3>
-                <ul>
-                    <li> Lunes, miércoles, jueves y viernes: 11 h a 19.30 h </li>
-                    <li>Sábados: 10 h a 20 h</li>
-                    <li> Domingos y festivos: 10 h a 15 h</li>
-                    <li> Martes no festivos: cerrado</li>
-                </ul>
-                <h3>Dirección</h3>
-                <p>
-                    <a href="https://www.google.com/maps/place/Rambla+del+Poblenou,+1,+08005+Barcelona/@41.3975104,2.2034485,17z/data=!3m1!4b1!4m5!3m4!1s0x12a4a36b1db3ec85:0xbfaec3c0c8fd3ae2!8m2!3d41.3975104!4d2.2056372" target="_blank">
-                         Plaza del Poblenou, 1 <br>08018 Barcelona (ver mapa+)
-                    </a>
-                </p>
-
-            </div>
-            <div class="dos-columnas">
-                <h3>Precios</h3>
-                <p>Entrada: 10 €.
-                <span>Permite acceder a todas las exposiciones en curso tantas veces como se quiera durante un mes a partir de la fecha de compra. Es necesario activar la entrada. </span>
-                <p>
-                <p>Entrada reducida: 5 €.
-                <span>Para estudiantes y para mayores de 65 años. </span>
+          <div class="tres-columnas">
+            <img src="assets/img/activ-guide.jpg" />
+            <h3>
+              Visita guiada a la colección de
+              <abbr title="La Galería Ecléctica">LAGaEC</abbr>
+            </h3>
+            <p>
+              <!-- TODO: Add date -->
+              Jueves a las 12 h. Sábados a las 10 h. Actividad gratuita con
+              inscripción previa
             </p>
-                <p>Grupos: Consultar condiciones: <a href="mailto:reservas@lagaec.org">reservas@lagaec.org</a> </p>
-                <button class="btn btn-secondary">Comprar entradas</button>
-            </div>
+          </div>
+          <div class="tres-columnas">
+            <img src="assets/img/activ-arts.jpg" />
+            <h3>Experiencias creativas</h3>
+            <p>
+              <!-- TODO: Add date -->
+              Del 2 de enero al 25 de junio de 2019. Actividad gratuita con
+              inscripción previa
+            </p>
+          </div>
+          <div class="tres-columnas">
+            <img src="assets/img/activ-conf.jpg" />
+            <h3>Cita con los expertos</h3>
+            <p>
+              <!-- TODO: Add date -->
+              Del 7 de enero al 1 de julio de 2019 (cada primer lunes de mes).
+              Conferencias gratuitas con inscripción previa
+            </p>
+          </div>
         </div>
-    </section>
-</main>
+      </section>
 
-<footer class="container-fluid">
-    <div class="container pie">
+      <section class="planifica-visita container">
+        <h2>Planifica tu visita</h2>
+        <div class="fila">
+          <div class="dos-columnas">
+            <h3>Horario</h3>
+            <!-- TODO: Add date -->
+            <ul>
+              <li>Lunes, miércoles, jueves y viernes: 11 h a 19.30 h</li>
+              <li>Sábados: 10 h a 20 h</li>
+              <li>Domingos y festivos: 10 h a 15 h</li>
+              <li>Martes no festivos: cerrado</li>
+            </ul>
+            <h3>Dirección</h3>
+            <p>
+              <a
+                href="https://www.google.com/maps/place/Rambla+del+Poblenou,+1,+08005+Barcelona/@41.3975104,2.2034485,17z/data=!3m1!4b1!4m5!3m4!1s0x12a4a36b1db3ec85:0xbfaec3c0c8fd3ae2!8m2!3d41.3975104!4d2.2056372"
+                target="_blank"
+              >
+                <!-- TODO: Add direccion -->
+                Plaza del Poblenou, 1<br />08018 Barcelona (ver mapa+)
+              </a>
+            </p>
+          </div>
+          <div class="dos-columnas">
+            <h3>Precios</h3>
+            <p>
+              Entrada: 10 €.
+              <span>
+                Permite acceder a todas las exposiciones en curso tantas veces
+                como se quiera durante un mes a partir de la fecha de compra. Es
+                necesario activar la entrada.
+              </span>
+            </p>
+
+            <p></p>
+            <p>
+              Entrada reducida: 5 €.
+              <span>Para estudiantes y para mayores de 65 años.</span>
+            </p>
+            <p>
+              Grupos: Consultar condiciones:
+              <!--TODO: Make email to-->
+              <a href="mailto:reservas@lagaec.org">reservas@lagaec.org</a>
+            </p>
+            <button class="btn btn-secondary">Comprar entradas</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container-fluid">
+      <div class="container pie">
         <h4>La Galería Ecléctica</h4>
         <a href="#">
-            Plaza del Poblenou, 1 <br>
-            08018 Barcelona
+          <!--TODO: Make adress-->
+          Plaza del Poblenou, 1<br />
+          08018 Barcelona
         </a>
         <div class="rrss">
-            <a href="#"><i class="fab fa-facebook-square"></i></a>
-            <a href="#"><i class="fab fa-twitter-square"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube-square"></i></a>
+          <!--TODO: Make list-->
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-twitter-square"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube-square"></i></a>
         </div>
 
         <form>
-            <h4>Suscríbete a nuestra Newsletter</h4>
-            <div class="form-group">
-                <input type="email" class="form-control" placeholder="Enter email">
-            </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input">
-                <label class="form-check-label">Acepto la <a href="#">Política de privacidad </a></label>
-            </div>
-            <button type="submit" class="btn btn-secondary">Registrarme</button>
+          <!--TODO: Cambiar idioma -->
+          <h4>Suscríbete a nuestra Newsletter</h4>
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Enter email"
+            />
+            <!--TODO: Cambiar idioma del placeholder-->
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" />
+            <label class="form-check-label">
+              Acepto la <a href="#">Política de privacidad </a>
+            </label>
+          </div>
+          <button type="submit" class="btn btn-secondary">Registrarme</button>
         </form>
         <a href="index.html" class="logo">
-            <img src="assets/img/logo.png"/>
+          <img src="assets/img/logo.png" />
         </a>
         <nav class="navbar navbar-expand-lg navbar-light bg-verde-claro">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Quiénes somos</a>
-                <a class="nav-item nav-link" href="#">Política de Privacidad</a>
-                <a class="nav-item nav-link" href="#">Aviso Legal</a>
-                <a class="nav-item nav-link" href="#">Cookies</a>
-            </div>
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Quiénes somos</a>
+            <a class="nav-item nav-link" href="#">Política de Privacidad</a>
+            <a class="nav-item nav-link" href="#">Aviso Legal</a>
+            <a class="nav-item nav-link" href="#">Cookies</a>
+          </div>
         </nav>
-
-    </div>
-    <div class="creditos">
-        <h6>Créditos</h6>
-        <p>© LAGaEC. Imágenes de las obras artísticas de dominio público,
-            <a href="https://www.metmuseum.org/art/collection/search#!?searchField=All&showOnly=openAccess&sortBy=relevance&offset=0&pageSize=0">The Metropolitan Museum</a>.
-            Fotografías, <a href="https://unsplash.com">Unsplash</a>
-            Actividad para comprobar la Accesibilidad Web, para el módulo de Diseño de Interfaces Web.
-            IES Rafael Alberti - 2022/2023</p>
-    </div>
-
-</footer>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="assets/bootstrap/js/bootstrap.js"></script>
-</body>
+      </div>
+      <div class="creditos">
+        <h5>Créditos</h5>
+        <p>
+          <!-- TODO: Añadir abreviación -->
+          © LAGaEC. Imágenes de las obras artísticas de dominio público,
+          <a
+            href="https://www.metmuseum.org/art/collection/search#!?searchField=All&showOnly=openAccess&sortBy=relevance&offset=0&pageSize=0"
+          >
+            <!-- TODO: Cambiar idioma-->
+            The Metropolitan Museum </a
+          >. Fotografías, <a href="https://unsplash.com">Unsplash</a> Actividad
+          para comprobar la Accesibilidad Web, para el módulo de Diseño de
+          Interfaces Web.
+          <!-- TODO: Añadir abreviación -->IES Rafael Alberti - 2022/2023
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/bootstrap/js/bootstrap.js"></script>
+  </body>
 </html>
