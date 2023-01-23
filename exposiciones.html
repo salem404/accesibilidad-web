@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <meta charset="UTF-8" lang="es" />
+    <meta charset="UTF-8" />
     <title>Exposiciones · La Galería Ecléctica</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" />
     <link
@@ -22,10 +22,23 @@
           <a href="donar.html">Donaciones</a>
         </div>
         <div>
-          <!-- TODO: Make it a list-->
-          <a href="#">ES</a>
-          <a href="#">CA</a>
-          <a href="#">EN</a>
+          <ul title="Cambiar idioma">
+            <li>
+              <button type="button" class="btn btn-secondary">
+                <abbr title="Español">ES</abbr>
+              </button>
+            </li>
+            <li lang="ca">
+              <button type="button" class="btn btn-secondary">
+                <abbr title="Catalá">CA</abbr>
+              </button>
+            </li>
+            <li lang="en">
+              <button type="button" class="btn btn-secondary">
+                <abbr title="English">EN</abbr>
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
       <a href="index.html">
@@ -78,8 +91,8 @@
               <img src="assets/img/expo-cezanne.jpg" />
             </a>
             <p>
-              <!--TODO: Add time-->
-              De 02/12/2018 a 17/04/2019
+              De <time datetime="2018-12-02">02/12/2018</time> a
+              <time datetime="2019-04-17">17/04/2019</time>
             </p>
             <a href="expo-detalle.html"><h3>Impresiones</h3></a>
           </div>
@@ -89,13 +102,12 @@
               <img src="assets/img/expo-caravaggio.jpg" />
             </a>
             <p>
-              <!--TODO: Add time-->
-              De 03/12/2018 a 17/05/2019
+              De <time datetime="2018-12-03">03/12/2018</time> a
+              <time datetime="2019-05-17">17/05/2019</time>
             </p>
             <a href="#">
               <h3>
-                <!--TODO: Add language-->
-                Caravaggio: el pintor del claroscuro
+                <span lang="it">Caravaggio</span>: el pintor del claroscuro
               </h3></a
             >
           </div>
@@ -111,8 +123,8 @@
               <img src="assets/img/expo-terracota.jpg" />
             </a>
             <p>
-              <!--TODO: Add time-->
-              De 18/05/2019 a 18/06/2019
+              De <time datetime="2019-05-18">18/05/2019</time> a
+              <time datetime="2019-06-18">18/06/2019</time>
             </p>
             <a href="#"> <h3>Terracotas</h3></a>
           </div>
@@ -121,24 +133,27 @@
               <img src="assets/img/expo-cezanne.jpg" />
             </a>
             <p>
-              <!--TODO: Add time-->
-              De 18/05/2019 a 17/07/2019
+              De <time datetime="2019-05-18">18/05/2019</time> a
+              <time datetime="2019-07-17">17/07/2019</time>
             </p>
-            <!--TODO: Add language-->
-            <a href="#"> <h3>Cézanne: el padre de la modernidad</h3></a>
+            <a href="#">
+              <h3>
+                <span lang="it">Cézanne</span>: el padre de la modernidad
+              </h3></a
+            >
           </div>
           <div class="cuatro-columnas">
             <a href="#">
               <img src="assets/img/expo-storytelling.jpg" />
             </a>
             <p>
-              <!--TODO: Add time-->
-              De 19/06/2019 a 20/09/2019
+              De <time datetime="2019-06-19">19/06/2019</time> a
+              <time datetime="2019-09-20">20/09/2019</time>
             </p>
             <a href="#">
               <h3>
-                <!--TODO: Add language-->
-                Storytelling, los artistas comparten historias
+                <span lang="en">Storytelling</span>, los artistas comparten
+                historias
               </h3>
             </a>
           </div>
@@ -174,7 +189,7 @@
               <!--TODO:Add alt & edit link-->
               <img src="assets/img/expo-goya.jpg" />
             </a>
-            <a href="#"> <h3>Goya, el sueño de la razón...</h3></a>
+            <a href="#"> <h3>Goya, el sueño de la razón…</h3></a>
           </div>
           <div class="cuatro-columnas">
             <a href="#">
@@ -196,11 +211,12 @@
     <footer class="container-fluid">
       <div class="container pie">
         <h4>La Galería Ecléctica</h4>
-        <a href="#">
-          <!--TODO: Make adress-->
-          Plaza del Poblenou, 1<br />
-          08018 Barcelona
-        </a>
+        <div>
+          <address>
+            Plaza del Poblenou, 1<br />
+            08018 Barcelona
+          </address>
+        </div>
         <div class="rrss">
           <!--TODO: Make list-->
           <a href="#"><i class="fab fa-facebook-square"></i></a>
@@ -210,8 +226,7 @@
         </div>
 
         <form>
-          <!--TODO: Cambiar idioma -->
-          <h4>Suscríbete a nuestra Newsletter</h4>
+          <h4>Suscríbete a nuestra <span lang="en">Newsletter</span></h4>
           <div class="form-group">
             <input
               type="email"
@@ -249,17 +264,19 @@
       <div class="creditos">
         <h5>Créditos</h5>
         <p>
-          <!-- TODO: Añadir abreviación -->
-          © LAGaEC. Imágenes de las obras artísticas de dominio público,
+          © <abbr title="La Galería Ecléctica">LAGaEC</abbr>. Imágenes de las
+          obras artísticas de dominio público,
           <a
             href="https://www.metmuseum.org/art/collection/search#!?searchField=All&showOnly=openAccess&sortBy=relevance&offset=0&pageSize=0"
+            lang="en"
           >
-            <!-- TODO: Cambiar idioma-->
             The Metropolitan Museum </a
-          >. Fotografías, <a href="https://unsplash.com">Unsplash</a> Actividad
-          para comprobar la Accesibilidad Web, para el módulo de Diseño de
-          Interfaces Web.
-          <!-- TODO: Añadir abreviación -->IES Rafael Alberti - 2022/2023
+          >. Fotografías,
+          <a href="https://unsplash.com" lang="en">Unsplash</a> Actividad para
+          comprobar la Accesibilidad Web, para el módulo de Diseño de Interfaces
+          Web. <abbr title="Instituto de Educación Secundaria">IES</abbr> Rafael
+          Alberti -
+          <!-- TODO: Change the way its read-->2022/2023
         </p>
       </div>
     </footer>

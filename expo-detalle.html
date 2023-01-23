@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <meta charset="UTF-8" lang="es" />
+    <meta charset="UTF-8" />
     <title>Exposiciones · La Galería Ecléctica</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" />
     <link
@@ -22,10 +22,23 @@
           <a href="donar.html">Donaciones</a>
         </div>
         <div>
-          <!-- TODO: Make it a list-->
-          <a href="#">ES</a>
-          <a href="#">CA</a>
-          <a href="#">EN</a>
+          <ul title="Cambiar idioma">
+            <li>
+              <button type="button" class="btn btn-secondary">
+                <abbr title="Español">ES</abbr>
+              </button>
+            </li>
+            <li lang="ca">
+              <button type="button" class="btn btn-secondary">
+                <abbr title="Catalá">CA</abbr>
+              </button>
+            </li>
+            <li lang="en">
+              <button type="button" class="btn btn-secondary">
+                <abbr title="English">EN</abbr>
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
       <a href="index.html">
@@ -68,62 +81,70 @@
       <section class="detalle-cabecera">
         <div class="container">
           <h1>Impresiones</h1>
-          <h2>Mirar a Degas: la captura del instante</h2>
-          43
+          <h2>Mirar a <span lang="fr">Degas</span>: la captura del instante</h2>
         </div>
       </section>
 
       <section id="proximas" class="actividades container">
         <div class="fila align-izquierda">
           <div class="tres-columnas">
-            <!--TODO: Add time-->
-            <h4>Del 2 de diciembre de 2018 hasta el 17 de abril de 2019</h4>
+            <h4>
+              Del
+              <time datetime="2018-12-2"> 2 de diciembre de 2018 </time>
+              hasta el
+              <time datetime="2019-4-17"> 17 de abril de 2019 </time>
+            </h4>
             <button class="btn btn-secondary">Comprar entradas</button>
           </div>
           <div class="dos-tres-columnas">
             <blockquote class="blockquote">
-              <p class="mb-0">
+              <q class="mb-0">
                 Es bueno copiar lo que se ve, pero es mucho mejor pintar lo que
                 queda en nuestra memoria después de ver algo. Se trata de una
                 transformación en donde la imaginación y la memoria trabajan
                 juntas. Sólo se puede reproducir algo que nos golpeó, es decir,
                 sólo lo esencial.
-              </p>
-              <footer class="blockquote-footer">
-                <cite>Edgar Degas</cite>
-              </footer>
+              </q>
+              <cite class="blockquote-footer" lang="fr">Edgar Degas</cite>
             </blockquote>
             <p>
-              Hilaire-Germain-Edgar de Gas, más conocido como Edgar Degas
-              <!--TODO:Add time-->
-              (París, 19 de julio de 1834-ibídem, 27 de septiembre de 1917), fue
+              <span lang="fr">Hilaire-Germain-Edgar de Gas</span>, más conocido
+              como <span lang="fr">Edgar Degas</span> (París,
+              <time datetime="1834-7-19"> 19 de julio de 1834</time>
+              -ibídem,
+              <time datetime="1917-9-27"> 27 de septiembre de 1917</time>), fue
               un pintor y escultor francés. Considerado uno de los fundadores
               del Impresionismo, aunque él mismo rechazaba el nombre y prefería
-              llamarlo realismo o arte realista, Degas fue uno de los grandes
-              dibujantes de la historia por su magistral captación de las
-              sensaciones de vida y movimiento, especialmente en sus obras de
-              bailarinas, carreras de caballos y desnudos. Sus retratos son muy
-              apreciados por la complejidad psicológica y sensación de verdad
-              que transmiten. Durante su vida, la recepción pública de las obras
-              de Degas osciló entre la admiración y el rechazo. En sus inicios,
-              durante su fase "clasicista" Degas llevó muchas obras al Salón de
-              París entre 1865 y 1870. Poco después, Degas se une a los
-              impresionistas y rechaza las reglas rígidas y el elitismo del
-              Salón; del mismo modo, el Salón y el público en general rechazaron
-              su viraje al Impresionismo. Reconocido como uno de los artistas
-              más importantes de la época, Degas es considerado actualmente como
-              uno de los fundadores del Impresionismo. Aunque en muchos
-              aspectos, sobre todo en la teoría y en ciertas técnicas, la
-              pintura de Degas chocaba con el grupo impresionista, su sentido
-              del color, de las formas en movimiento, de la luz y las
-              composiciones dinámicas no solamente inspiraron a otros miembros
-              del grupo, sino que de algún modo fueron una de las cimas de este
-              movimiento pictórico. Fuente:
+              llamarlo realismo o arte realista,
+              <span lang="fr">Degas</span> fue uno de los grandes dibujantes de
+              la historia por su magistral captación de las sensaciones de vida
+              y movimiento, especialmente en sus obras de bailarinas, carreras
+              de caballos y desnudos. Sus retratos son muy apreciados por la
+              complejidad psicológica y sensación de verdad que transmiten.
+              Durante su vida, la recepción pública de las obras de
+              <span lang="fr">Degas</span> osciló entre la admiración y el
+              rechazo. En sus inicios, durante su fase "clasicista"
+              <span lang="fr">Degas</span> llevó muchas obras al Salón de París
+              entre <time datetime="1865">1865</time> y
+              <time datetime="1870">1870</time>. Poco después,
+              <span lang="fr">Degas</span> se une a los impresionistas y rechaza
+              las reglas rígidas y el elitismo del Salón; del mismo modo, el
+              Salón y el público en general rechazaron su viraje al
+              Impresionismo. Reconocido como uno de los artistas más importantes
+              de la época, <span lang="fr">Degas</span> es considerado
+              actualmente como uno de los fundadores del Impresionismo. Aunque
+              en muchos aspectos, sobre todo en la teoría y en ciertas técnicas,
+              la pintura de <span lang="fr">Degas</span> chocaba con el grupo
+              impresionista, su sentido del color, de las formas en movimiento,
+              de la luz y las composiciones dinámicas no solamente inspiraron a
+              otros miembros del grupo, sino que de algún modo fueron una de las
+              cimas de este movimiento pictórico. Fuente:
               <a
                 href="https://es.wikipedia.org/wiki/Edgar_Degas"
                 target="_blank"
-                >Wikipedia</a
               >
+                Wikipedia
+              </a>
             </p>
             <p>
               Esta exposición incluye muchas de las obras que nos ha legado el
@@ -139,9 +160,9 @@
               >
               </iframe>
 
-              Animación inspirada por La clase de danza de Edgar Degas.
-              <!--TODO:Add language-->
-              The Metropolitan Museum of Art
+              Animación inspirada por La clase de danza de
+              <span lang="fr">Edgar Degas</span>.
+              <cite lang="en"> The Metropolitan Museum of Art </cite>
             </p>
 
             <table class="table table-light">
@@ -154,7 +175,7 @@
               </tr>
               <tr>
                 <th>Artista</th>
-                <td>Edgar Degas</td>
+                <td><span lang="fr">Edgar Degas</span></td>
               </tr>
               <tr>
                 <th>Técnica</th>
@@ -173,11 +194,12 @@
     <footer class="container-fluid">
       <div class="container pie">
         <h4>La Galería Ecléctica</h4>
-        <!--TODO: Make adress-->
-        <a href="#">
-          Plaza del Poblenou, 1<br />
-          08018 Barcelona
-        </a>
+        <div>
+          <adress>
+            Plaza del Poblenou, 1<br />
+            08018 Barcelona
+          </adress>
+        </div>
         <div class="rrss">
           <a href="#"><i class="fab fa-facebook-square"></i></a>
           <a href="#"><i class="fab fa-twitter-square"></i></a>
@@ -185,8 +207,7 @@
           <a href="#"><i class="fab fa-youtube-square"></i></a>
         </div>
         <form>
-          <!--TODO: Cambiar idioma -->
-          <h4>Suscríbete a nuestra Newsletter</h4>
+          <h4>Suscríbete a nuestra <span lang="en">Newsletter</span></h4>
           <div class="form-group">
             <input
               type="email"
@@ -216,18 +237,18 @@
       <div class="creditos">
         <h5>Créditos</h5>
         <p>
-          <!-- TODO: Añadir abreviación -->
-          © LAGaEC. Imágenes de las obras artísticas de dominio público,
+          © <abbr title="La Galería Ecléctica">LAGaEC</abbr>. Imágenes de las
+          obras artísticas de dominio público,
           <a
             href="https://www.metmuseum.org/art/collection/search#!?searchField=All&showOnly=openAccess&sortBy=relevance&offset=0&pageSize=0"
+            lang="en"
           >
-            <!-- TODO: Cambiar idioma-->
-            The Metropolitan Museum</a
-          >. Fotografías, <a href="https://unsplash.com">Unsplash</a> Actividad
-          para comprobar la Accesibilidad Web, para el módulo de Diseño de
-          Interfaces Web.
-          <!-- TODO: Añadir abreviación -->
-          IES Rafael Alberti - 2022/2023
+            The Metropolitan Museum </a
+          >. Fotografías,
+          <a href="https://unsplash.com" lang="en">Unsplash</a> Actividad para
+          comprobar la Accesibilidad Web, para el módulo de Diseño de Interfaces
+          Web. <abbr title="Instituto de Educación Secundaria">IES</abbr> Rafael
+          Alberti - 2022/2023
         </p>
       </div>
     </footer>

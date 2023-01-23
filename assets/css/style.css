@@ -67,6 +67,12 @@ header {
   max-width: 200px;
 }
 
+.cabecera-top > div > ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
 header > nav,
 header > a {
   width: 100%;

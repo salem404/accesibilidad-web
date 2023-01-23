@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <meta charset="UTF-8" lang="es" />
+    <meta charset="UTF-8" />
     <title>Donar · La Galería Ecléctica</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" />
     <link
@@ -20,10 +20,23 @@
       <div class="cabecera-top">
         <div><a href="donar.html">Donaciones</a></div>
         <div>
-          <!-- TODO: Make it a list-->
-          <a href="#">ES</a>
-          <a href="#">CA</a>
-          <a href="#">EN</a>
+          <ul title="Cambiar idioma">
+            <li>
+              <button type="button" class="btn btn-secondary">
+                <abbr title="Español">ES</abbr>
+              </button>
+            </li>
+            <li lang="ca">
+              <button type="button" class="btn btn-secondary">
+                <abbr title="Catalá">CA</abbr>
+              </button>
+            </li>
+            <li lang="en">
+              <button type="button" class="btn btn-secondary">
+                <abbr title="English">EN</abbr>
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
       <a href="index.html">
@@ -70,17 +83,20 @@
         <div class="fila align-izquierda">
           <div class="tres-columnas">
             <blockquote class="blockquote">
-              <p class="mb-0">
+              <q class="mb-0">
                 La protección y promoción de la diversidad cultural y natural es
                 uno de los grandes desafíos del siglo XXI. A este respecto, los
                 museos y colecciones son medios primordiales para salvaguardar
                 los testimonios materiales e inmateriales de la naturaleza y las
                 culturas humanas.
-              </p>
-              <footer class="blockquote-footer">
-                <!--TODO:Add time-->
-                <cite>UNESCO, 17 de noviembre de 2015</cite>
-              </footer>
+              </q>
+              <cite class="blockquote-footer">
+                <abbr
+                  title="Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura"
+                >
+                  UNESCO</abbr
+                >, <time datetime="2015-11-17">17 de noviembre de 2015</time>
+              </cite>
             </blockquote>
           </div>
           <div class="dos-tres-columnas">
@@ -232,11 +248,12 @@
     <footer class="container-fluid">
       <div class="container pie">
         <h4>La Galería Ecléctica</h4>
-        <a href="#">
-          <!--TODO: Make adress-->
-          Plaza del Poblenou, 1<br />
-          08018 Barcelona
-        </a>
+        <div>
+          <adress>
+            Plaza del Poblenou, 1<br />
+            08018 Barcelona
+          </adress>
+        </div>
         <div class="rrss">
           <!--TODO: Make list-->
           <a href="#"><i class="fab fa-facebook-square"></i></a>
@@ -246,8 +263,7 @@
         </div>
 
         <form>
-          <!--TODO: Cambiar idioma -->
-          <h4>Suscríbete a nuestra Newsletter</h4>
+          <h4>Suscríbete a nuestra <span lang="en">Newsletter</span></h4>
           <div class="form-group">
             <input
               type="email"
@@ -279,17 +295,18 @@
       <div class="creditos">
         <h5>Créditos</h5>
         <p>
-          <!-- TODO: Añadir abreviación -->
-          © LAGaEC. Imágenes de las obras artísticas de dominio público,
+          © <abbr title="La Galería Ecléctica">LAGaEC</abbr>. Imágenes de las
+          obras artísticas de dominio público,
           <a
             href="https://www.metmuseum.org/art/collection/search#!?searchField=All&showOnly=openAccess&sortBy=relevance&offset=0&pageSize=0"
+            lang="en"
           >
-            <!-- TODO: Cambiar idioma-->
             The Metropolitan Museum </a
-          >. Fotografías, <a href="https://unsplash.com">Unsplash</a> Actividad
-          para comprobar la Accesibilidad Web, para el módulo de Diseño de
-          Interfaces Web.
-          <!-- TODO: Añadir abreviación -->IES Rafael Alberti - 2022/2023
+          >. Fotografías,
+          <a href="https://unsplash.com" lang="en">Unsplash</a> Actividad para
+          comprobar la Accesibilidad Web, para el módulo de Diseño de Interfaces
+          Web. <abbr title="Instituto de Educación Secundaria">IES</abbr> Rafael
+          Alberti - 2022/2023
         </p>
       </div>
     </footer>

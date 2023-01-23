@@ -1,4 +1,4 @@
-﻿# ¡Hola! 👋🏻 Soy Paula 🧑🏻‍💻
+﻿¡Hola! 👋🏻 Soy Paula 🧑🏻‍💻
 
 Este proyecto pertenece a la práctica de Accesibilidad Web.
 
@@ -8,23 +8,22 @@ Práctica - Accesibilidad Web
 
 ## Índice
 
-- [¡Hola! 👋🏻 Soy Paula 🧑🏻‍💻](#hola--soy-paula-)
-  - [Módulo Diseño de Interfaces Web 🎨](#módulo-diseño-de-interfaces-web-)
-  - [Índice](#índice)
-  - [Proceso ⚙️](#proceso-️)
-    - [Pruebas](#pruebas)
-    - [Resolución de problemas](#resolución-de-problemas)
-      - [Colores](#colores)
-      - [Imágenes](#imágenes)
-      - [Enlaces](#enlaces)
-      - [Tipos de etiqueta](#tipos-de-etiqueta)
-        - [Encabezados](#encabezados)
-        - [Formularios](#formularios)
-        - [Otros](#otros)
-      - [Extra](#extra)
-    - [Comprobación final](#comprobación-final)
-  - [Recursos ⚖️](#recursos-️)
-  - [Lenguajes y Tecnologías 💻](#lenguajes-y-tecnologías-)
+- [Módulo Diseño de Interfaces Web 🎨](#módulo-diseño-de-interfaces-web-)
+- [Índice](#índice)
+- [Proceso ⚙️](#proceso-️)
+  - [Pruebas](#pruebas)
+  - [Resolución de problemas](#resolución-de-problemas)
+    - [Colores](#colores)
+    - [Imágenes](#imágenes)
+    - [Enlaces](#enlaces)
+    - [Tipos de etiqueta](#tipos-de-etiqueta)
+      - [Encabezados](#encabezados)
+      - [Formularios](#formularios)
+      - [Otros](#otros)
+    - [Extra](#extra)
+  - [Comprobación final](#comprobación-final)
+- [Recursos ⚖️](#recursos-️)
+- [Lenguajes y Tecnologías 💻](#lenguajes-y-tecnologías-)
 
 ## Proceso ⚙️
 
@@ -32,7 +31,7 @@ Estos han sido los pasos seguidos en la elaboración de esta práctica.
 
 ### Pruebas
 
-Antes de comenzar a realizar modificaciones debemos hacer un listado de todos los posibles fallos de accesibilidad para poder ocuparnos de ellos de forma ordenada. Para ello usaremos [Wave](https://wave.webaim.org/) en cada página, dando los siguientes resultados:
+Antes de comenzar a realizar modificaciones debemos hacer un listado de todos los posibles fallos de accesibilidad para poder ocuparnos de ellos de forma ordenada. Para ello usaremos [Wave](https://wave.webaim.org/) en cada página, y [Tawdis]() para recibir un informe general, dando los siguientes resultados:
 
 - Problemas generales
 
@@ -42,7 +41,6 @@ Antes de comenzar a realizar modificaciones debemos hacer un listado de todos lo
   - Imágenes externas sin texto alternativo
   - No hay lenguaje definido
   - Enlaces vacíos de redes sociales
-  - Botón hamburguesa del nav, inútil en desktop pero tabulable
   - Texto del footer demasiado pequeño
   - Enlaces sin nombre accesible
   - Secciones enteras inaccesibles por tabulación
@@ -110,6 +108,10 @@ Las imágenes utilizadas en la web necesitan títulos en caso de ser importantes
 
 #### Tipos de etiqueta
 
+Si hay una sucesión de elementos relacionados entres si es mejor para la accesibilidad ponerlos en una lista que los agrupe. Como en:
+
+- Los idiomas, que además tendrían más sentido siendo botones. Para esto he cambiado también el CSS para eliminar la decoración de lista.
+
 ##### Encabezados
 
 Este problema requiere una reestructuración de las páginas siguiendo el orden de encabezados tal que:
@@ -132,13 +134,35 @@ Para que los lectores de pantalla puedan interpretar correctamente nuestros dato
 - [Abreviaciones](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-abbr-element) (`<abbr>`)
   - LAGaEC como La Galeria Ecléctica
   - EUR para euro
+  - IES como Instituto de Educación Secundaria
+  - UNESCO como Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura
 - [Horas](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element) (`<time>`)
-- [Citas](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-cite-element) (`<cite>`)
+  - Cita de la UNESCO
+  - Horas de actividades
+  - Descripciones
+  - Fechas de exposiciones
+- [Citas](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-cite-element) (`<q>`)
+  - UNESCO
+  - Edgar Degas
+  - The Metropolitan Museum of Art
 - [Direcciones](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address) (`<address>`)
+  - Como se usa para dar información de contacto se ha añadido a la dirección de la galería en todas las páginas
+  - También al email de consulta de condiciones
+
+Si hay una sucesión de elementos relacionados entres si es mejor para la accesibilidad ponerlos en una lista que los agrupe. Como en:
+
+- Los idiomas en el nav
 
 #### Extra
 
-Será necesario añadir el [atributo `lang`](https://www.w3schools.com/tags/att_global_lang.asp) para añadir el lenguaje de la página y el de partes de esta con palabras no españolas.También un [aviso JavaScript](https://www.w3schools.com/tags/tag_noscript.asp) (`<noscript>`) que aparecerá si no tienen Java Script activado.
+Será necesario añadir el [atributo `lang`](https://www.w3schools.com/tags/att_global_lang.asp) al html para añadir el lenguaje de la página y el de partes de esta con palabras no españolas.
+
+- Nombres extranjeros
+- Palabras extranjeras
+
+También un [aviso JavaScript](https://www.w3schools.com/tags/tag_noscript.asp) (`<noscript>`) que aparecerá si no tienen Java Script activado. Y se ha comprobado que el video de YouTube tiene subtítulos. Otros cambios extra incluyen:
+
+- Eliminado número sin contexto ni comentarios en expo-detalle.html a falta de utilidad
 
 ### Comprobación final
 
