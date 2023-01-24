@@ -1,4 +1,4 @@
-﻿¡Hola! 👋🏻 Soy Paula 🧑🏻‍💻
+﻿# ¡Hola! 👋🏻 Soy Paula 🧑🏻‍💻
 
 Este proyecto pertenece a la práctica de Accesibilidad Web.
 
@@ -8,22 +8,23 @@ Práctica - Accesibilidad Web
 
 ## Índice
 
-- [Módulo Diseño de Interfaces Web 🎨](#módulo-diseño-de-interfaces-web-)
-- [Índice](#índice)
-- [Proceso ⚙️](#proceso-️)
-  - [Pruebas](#pruebas)
-  - [Resolución de problemas](#resolución-de-problemas)
-    - [Colores](#colores)
-    - [Imágenes](#imágenes)
-    - [Enlaces](#enlaces)
-    - [Tipos de etiqueta](#tipos-de-etiqueta)
-      - [Encabezados](#encabezados)
-      - [Formularios](#formularios)
-      - [Otros](#otros)
-    - [Extra](#extra)
-  - [Comprobación final](#comprobación-final)
-- [Recursos ⚖️](#recursos-️)
-- [Lenguajes y Tecnologías 💻](#lenguajes-y-tecnologías-)
+- [¡Hola! 👋🏻 Soy Paula 🧑🏻‍💻](#hola--soy-paula-)
+  - [Módulo Diseño de Interfaces Web 🎨](#módulo-diseño-de-interfaces-web-)
+  - [Índice](#índice)
+  - [Proceso ⚙️](#proceso-️)
+    - [Pruebas](#pruebas)
+    - [Resolución de problemas](#resolución-de-problemas)
+      - [Colores](#colores)
+      - [Imágenes](#imágenes)
+      - [Enlaces](#enlaces)
+      - [Tipos de etiqueta](#tipos-de-etiqueta)
+        - [Encabezados](#encabezados)
+        - [Formularios](#formularios)
+        - [Otros](#otros)
+      - [Extra](#extra)
+    - [Comprobación final](#comprobación-final)
+  - [Recursos ⚖️](#recursos-️)
+  - [Lenguajes y Tecnologías 💻](#lenguajes-y-tecnologías-)
 
 ## Proceso ⚙️
 
@@ -147,7 +148,7 @@ También hace falta que todos los encabezados sean descriptivos de la sección q
 
 ##### Formularios
 
-Para reparar los inputs sin labels ponemos en estos un id que corresponda con el atributo for de su label correspondiente.
+Para reparar los inputs sin labels ponemos en estos un id que corresponda con el atributo for de su label correspondiente. En caso de que no se pueda poner una label, se le añadirá un atributo title al input.
 
 ##### Otros
 
@@ -189,16 +190,32 @@ También un [aviso JavaScript](https://www.w3schools.com/tags/tag_noscript.asp) 
 - Eliminado número sin contexto ni comentarios en expo-detalle.html a falta de utilidad
 - Añadida aria-label al botón hamburguesa
 - Cambiado el placeholder de subscripción a la Newsletter para que esté en español
+- Los iconos con fontawesome han sido cambiados siguiendo sus [pautas de accesibilidad](https://fontawesome.com/docs/web/dig-deeper/accessibility#manually-make-your-icons-accessible)
 
 ### Comprobación final
 
+Tras todas las modificaciones
+
 ## Recursos ⚖️
 
-Si alguna de las obras utilizadas es digital, se adjuntarán los ficheros originales en la carpeta docs.
-
-| Recurso | Nombre | Autoría | Obtención | Estatus legal |
-| ------- | ------ | ------- | --------- | ------------- |
-|         |        |         |           |               |
+| Recurso                                | Nombre                            | Autoría           | Obtención               | Estatus legal    |
+| -------------------------------------- | --------------------------------- | ----------------- | ----------------------- | ---------------- |
+| activ-arts.jpg                         |                                   |                   | Unsplash                |                  |
+| activ-conf.jpg                         |                                   |                   | Unsplash                |                  |
+| activ-guide.jpg                        |                                   | Eric Park         | Unsplash                | Unsplash license |
+| donar.jpg                              |                                   |                   | Unsplash                |                  |
+| expo-caravaggio.jpg                    | La negación de San Pedro          | Caravaggio        | The Metropolitan Museum | Dominio público  |
+| expo-cezanne.jpg                       | Los Jugadores de Cartas           | Paul Cézanne      | The Metropolitan Museum | Dominio público  |
+| expo-degas.jpg / expo-detall-degas.jpg |                                   | Degas             | The Metropolitan Museum | Dominio público  |
+| expo-goya.jpg                          |                                   | Goya              | The Metropolitan Museum | Dominio público  |
+| expo-manuscritos.jpg                   |                                   |                   | The Metropolitan Museum | Dominio público  |
+| expo-pintores-holandeses.jpg           | Mujer con una jarra de agua       | Johannes Vermeer  | The Metropolitan Museum | Dominio público  |
+| expo-rostro-humano.jpg                 | Virgen María                      | Da Vinci          | The Metropolitan Museum | Dominio público  |
+| expo-storytelling.jpg                  | La curación del ciego             | El Greco          | The Metropolitan Museum | Dominio público  |
+| expo-terracota.jpg                     |                                   |                   | The Metropolitan Museum | Dominio público  |
+| expo-vangogh.jpg                       | Autorretrato con sombrero de paja | Vincent van Gogh  | The Metropolitan Museum | Dominio público  |
+| LAGaEC.png                             |                                   | Alejandro Carmona |                         |                  |
+| logo.png                               |                                   | Alejandro Carmona |                         |                  |
 
 ## Lenguajes y Tecnologías 💻
 
