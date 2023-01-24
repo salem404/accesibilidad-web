@@ -223,6 +223,10 @@ Tras todas las modificaciones si volvemos a pasar las páginas de la web por [Ta
 
 ![Resultado sobre exposiciones en detalle](assets/img/tawdisExpoDet.png)
 
+En [AChecker](https://achecks.ca/achecker) nos comprueba que según WCAG 2.0:
+
+![Resultado sobre exposiciones en detalle](assets/img/AC.png)
+
 #### Donaciones
 
 ![Resultado sobre donaciones](assets/img/tawdisDona.png)
@@ -251,6 +255,7 @@ Tras todas las modificaciones si volvemos a pasar las páginas de la web por [Ta
 | tawdisExpo.png                         | Captura de pantalla test 2        |                   | Captura de pantalla     |                  |
 | tawdisExpoDet.png                      | Captura de pantalla test 3        |                   | Captura de pantalla     |                  |
 | tawdisDona.png                         | Captura de pantalla test 4        |                   | Captura de pantalla     |                  |
+| AC.png                                 | Captura de pantalla test 5        |                   | Captura de pantalla     |                  |
 
 ## Lenguajes y Tecnologías 💻
 
