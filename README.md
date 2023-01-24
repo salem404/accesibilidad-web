@@ -213,27 +213,17 @@ Tras todas las modificaciones si volvemos a pasar las páginas de la web por [Ta
 
 #### Index
 
-Esta página también aprueba el nivel AAA
-
 ![Resultado sobre el index](assets/img/tawdisIndex.png)
 
 #### Exposiciones
-
-En esta página me daba un error inusual al marcar como error encabezados seguidos a pesar de estar en distintas secciones. Por lo que añadí el botón de ver más en todas.
-
-No da por correcto
 
 ![Resultado sobre exposiciones](assets/img/tawdisExpo.png)
 
 #### Exposiciones en detalle
 
-Los fallos que dan son del iframe y la tabla
-
 ![Resultado sobre exposiciones en detalle](assets/img/tawdisExpoDet.png)
 
 #### Donaciones
-
-[ ] Checkboxs
 
 ![Resultado sobre donaciones](assets/img/tawdisDona.png)
 
@@ -257,7 +247,10 @@ Los fallos que dan son del iframe y la tabla
 | expo-vangogh.jpg                       | Autorretrato con sombrero de paja | Vincent van Gogh  | The Metropolitan Museum | Dominio público  |
 | LAGaEC.png                             |                                   | Alejandro Carmona |                         |                  |
 | logo.png                               |                                   | Alejandro Carmona |                         |                  |
-| tawdisIndex.png                        | Captura de pantalla test index    |                   | Captura de pantalla     |                  |
+| tawdisIndex.png                        | Captura de pantalla test 1        |                   | Captura de pantalla     |                  |
+| tawdisExpo.png                         | Captura de pantalla test 2        |                   | Captura de pantalla     |                  |
+| tawdisExpoDet.png                      | Captura de pantalla test 3        |                   | Captura de pantalla     |                  |
+| tawdisDona.png                         | Captura de pantalla test 4        |                   | Captura de pantalla     |                  |
 
 ## Lenguajes y Tecnologías 💻
 
