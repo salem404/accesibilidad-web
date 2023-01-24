@@ -39,27 +39,43 @@
           </ul>
         </div>
       </div>
-      <a href="index.html">
-        <!-- TODO: Add alt -->
-        <img src="assets/img/logo.png" />
-      </a>
+      <h1>
+        <a href="index.html">
+          <img
+            src="assets/img/logo.png"
+            alt="La Galería Ecléctica Galeria de Arte"
+          />
+        </a>
+      </h1>
       <nav class="navbar navbar-expand-lg navbar-light bg-verde-claro">
         <button
           class="navbar-toggler"
           data-toggle="collapse"
           data-target="#navbarNavAltMarkup"
+          aria-label="Acordeón navegador"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <!-- TODO: Make list and fix links-->
-            <a class="nav-item nav-link" href="#">Colección</a>
-            <a class="nav-item nav-link" href="exposiciones.html">
-              Exposiciones
-            </a>
-            <a class="nav-item nav-link" href="#">Actividades</a>
-            <a class="nav-item nav-link" href="#">Revista</a>
+            <ul>
+              <li>
+                <a class="nav-item nav-link" href="coleccion.html">Colección</a>
+              </li>
+              <li>
+                <a class="nav-item nav-link" href="exposiciones.html">
+                  Exposiciones
+                </a>
+              </li>
+              <li>
+                <a class="nav-item nav-link" href="actividades.html"
+                  >Actividades</a
+                >
+              </li>
+              <li>
+                <a class="nav-item nav-link" href="revista.html">Revista</a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -70,19 +86,18 @@
         <h2>Exposiciones actuales</h2>
         <div class="fila">
           <div class="dos-columnas">
-            <!-- TODO: Combine -->
             <a href="expo-detalle.html">
-              <img src="assets/img/expo-cezanne.jpg" />
+              <img src="assets/img/expo-cezanne.jpg" alt="" />
+              <h3>Impresiones</h3>
             </a>
-            <a href="expo-detalle.html"><h3>Impresiones</h3></a>
             <p>Hasta <time datetime="2029-04">abril de 2019</time></p>
           </div>
           <div class="dos-columnas">
-            <a href="#">
-              <img src="assets/img/expo-caravaggio.jpg" />
-            </a>
-            <a href="#">
-              <h3><span lang="it">Caravaggio</span>: el pintor del claroscuro</h3>
+            <a href="expo-detalle2.html">
+              <img src="assets/img/expo-caravaggio.jpg" alt="" />
+              <h3>
+                <span lang="it">Caravaggio</span>: el pintor del claroscuro
+              </h3>
             </a>
             <p>Hasta <time datetime="2019-05">mayo de 2019</time></p>
           </div>
@@ -90,34 +105,42 @@
       </section>
 
       <section class="actividades container">
-        <!-- TODO: Change heading-->
-        <h2>Exposiciones actuales</h2>
+        <h2>Actividades actuales</h2>
         <div class="fila">
           <div class="tres-columnas">
-            <img src="assets/img/activ-guide.jpg" />
-            <h3>
-              Visita guiada a la colección de
-              <abbr title="La Galería Ecléctica">LAGaEC</abbr>
-            </h3>
+            <a href="act-detalle.html">
+              <img src="assets/img/activ-guide.jpg" alt="" />
+              <h3>
+                Visita guiada a la colección de
+                <abbr title="La Galería Ecléctica">LAGaEC</abbr>
+              </h3>
+            </a>
             <p>
-              Jueves a las <time datetime="12:00">12 h</time>. Sábados a las <time datetime="10:00">10 h</time>. Actividad gratuita con
+              Jueves a las <time datetime="12:00">12 h</time>. Sábados a las
+              <time datetime="10:00">10 h</time>. Actividad gratuita con
               inscripción previa
             </p>
           </div>
           <div class="tres-columnas">
-            <img src="assets/img/activ-arts.jpg" />
-            <h3>Experiencias creativas</h3>
+            <a href="act-detalle2.html">
+              <img src="assets/img/activ-arts.jpg" alt="" />
+              <h3>Experiencias creativas</h3>
+            </a>
             <p>
-              Del <time datetime="2019-01-02">2 de enero</time> al <time datetime="2019-06-25">25 de junio de 2019</time>. Actividad gratuita con
-              inscripción previa
+              Del <time datetime="2019-01-02">2 de enero</time> al
+              <time datetime="2019-06-25">25 de junio de 2019</time>. Actividad
+              gratuita con inscripción previa
             </p>
           </div>
           <div class="tres-columnas">
-            <img src="assets/img/activ-conf.jpg" />
-            <h3>Cita con los expertos</h3>
+            <a href="act-detalle3.html">
+              <img src="assets/img/activ-conf.jpg" alt="" />
+              <h3>Cita con los expertos</h3>
+            </a>
             <p>
-              Del <time datetime="2019-01-07">7 de enero</time> al <time datetime="2019-07-01">1 de julio de 2019</time> (cada primer lunes de mes).
-              Conferencias gratuitas con inscripción previa
+              Del <time datetime="2019-01-07">7 de enero</time> al
+              <time datetime="2019-07-01">1 de julio de 2019</time> (cada primer
+              lunes de mes). Conferencias gratuitas con inscripción previa
             </p>
           </div>
         </div>
@@ -128,24 +151,33 @@
         <div class="fila">
           <div class="dos-columnas">
             <h3>Horario</h3>
-            <ul>
-              <li>Lunes, miércoles, jueves y viernes: <time datetime="11:00">11 h</time> a <time datetime="19:30">19:30 h</time></li>
-              <li>Sábados: <time datetime="10:00">10 h</time> a <time datetime="20:00">20 h</time></li>
-              <li>Domingos y festivos: <time datetime="10:00">10 h</time> a <time datetime="15:00">15 h</time></li>
+            <ul class="list">
+              <li>
+                Lunes, miércoles, jueves y viernes:
+                <time datetime="11:00">11 h</time> a
+                <time datetime="19:30">19:30 h</time>
+              </li>
+              <li>
+                Sábados: <time datetime="10:00">10 h</time> a
+                <time datetime="20:00">20 h</time>
+              </li>
+              <li>
+                Domingos y festivos: <time datetime="10:00">10 h</time> a
+                <time datetime="15:00">15 h</time>
+              </li>
               <li>Martes no festivos: cerrado</li>
             </ul>
             <h3>Dirección</h3>
-            <p>
-              <address>
-                Plaza del Poblenou, 1<br />08018 Barcelona
-                <a
-                  href="https://www.google.com/maps/place/Rambla+del+Poblenou,+1,+08005+Barcelona/@41.3975104,2.2034485,17z/data=!3m1!4b1!4m5!3m4!1s0x12a4a36b1db3ec85:0xbfaec3c0c8fd3ae2!8m2!3d41.3975104!4d2.2056372"
-                  target="_blank"
-                >
+            <p></p>
+            <address>
+              Plaza del Poblenou, 1<br />08018 Barcelona
+              <a
+                href="https://www.google.com/maps/place/Rambla+del+Poblenou,+1,+08005+Barcelona/@41.3975104,2.2034485,17z/data=!3m1!4b1!4m5!3m4!1s0x12a4a36b1db3ec85:0xbfaec3c0c8fd3ae2!8m2!3d41.3975104!4d2.2056372"
+                target="_blank"
+              >
                 (ver mapa+)
-                </a>
-              </address>
-            </p>
+              </a>
+            </address>
           </div>
           <div class="dos-columnas">
             <h3>Precios</h3>
@@ -158,17 +190,16 @@
               </span>
             </p>
 
-            <p></p>
             <p>
               Entrada reducida: 5 €.
               <span>Para estudiantes y para mayores de 65 años.</span>
             </p>
-            <p>
-              Grupos: Consultar condiciones:
-              <address>
-                <a href="mailto:reservas@lagaec.org">reservas@lagaec.org</a>
-              </address>
-            </p>
+            <p>Grupos: Consultar condiciones:</p>
+
+            <address>
+              <a href="mailto:reservas@lagaec.org">reservas@lagaec.org</a>
+            </address>
+
             <button class="btn btn-secondary">Comprar entradas</button>
           </div>
         </div>
@@ -185,11 +216,28 @@
           </address>
         </div>
         <div class="rrss">
-          <!--TODO: Make list-->
-          <a href="#"><i class="fab fa-facebook-square"></i></a>
-          <a href="#"><i class="fab fa-twitter-square"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-youtube-square"></i></a>
+          <ul class="rss-lista">
+            <li>
+              <a href="https://www.facebook.com/" aria-label="Facebook"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" aria-label="Twitter"
+                ><i class="fab fa-twitter-square"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/" aria-label="Youtube"
+                ><i class="fab fa-youtube-square"></i
+              ></a>
+            </li>
+          </ul>
         </div>
 
         <form>
@@ -198,28 +246,47 @@
             <input
               type="email"
               class="form-control"
-              placeholder="Enter email"
+              placeholder="Ingresa tu email"
+              aria-label="email"
             />
-            <!--TODO: Cambiar idioma del placeholder-->
           </div>
           <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" />
-            <label class="form-check-label">
-              Acepto la <a href="#">Política de privacidad </a>
+            <input type="checkbox" class="form-check-input" id="politicas" />
+
+            <label class="form-check-label" for="politicas">
+              Acepto la
+              <a href="politica-privacidad.html">Política de privacidad </a>
             </label>
           </div>
           <button type="submit" class="btn btn-secondary">Registrarme</button>
         </form>
         <a href="index.html" class="logo">
-          <img src="assets/img/logo.png" />
+          <img
+            src="assets/img/logo.png"
+            alt="La Galería Ecléctica Galeria de Arte"
+          />
         </a>
         <nav class="navbar navbar-expand-lg navbar-light bg-verde-claro">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Quiénes somos</a>
-            <a class="nav-item nav-link" href="#">Política de Privacidad</a>
-            <a class="nav-item nav-link" href="#">Aviso Legal</a>
-            <a class="nav-item nav-link" href="#">Cookies</a>
-          </div>
+          <ul class="navbar-nav">
+            <li>
+              <a class="nav-item nav-link" href="about.html"> Quiénes somos </a>
+            </li>
+            <li>
+              <a class="nav-item nav-link" href="politica-privacidad.html">
+                Política de Privacidad
+              </a>
+            </li>
+            <li>
+              <a class="nav-item nav-link" href="aviso-legal.html">
+                Aviso Legal
+              </a>
+            </li>
+            <li>
+              <a class="nav-item nav-link" href="cookies.html" lang="en">
+                Cookies
+              </a>
+            </li>
+          </ul>
         </nav>
       </div>
       <div class="creditos">
@@ -229,14 +296,19 @@
           obras artísticas de dominio público,
           <a
             href="https://www.metmuseum.org/art/collection/search#!?searchField=All&showOnly=openAccess&sortBy=relevance&offset=0&pageSize=0"
-          lang="en"
-            >
+            lang="en"
+          >
             The Metropolitan Museum </a
-          >. Fotografías, <a href="https://unsplash.com" lang="en">Unsplash</a> Actividad
-          para comprobar la Accesibilidad Web, para el módulo de Diseño de
-          Interfaces Web.
+          >. Fotografías,
+          <a href="https://unsplash.com" lang="en">Unsplash</a> Actividad para
+          comprobar la Accesibilidad Web, para el módulo de Diseño de Interfaces
+          Web.
           <abbr title="Instituto de Educación Secundaria">IES</abbr>
-          Rafael Alberti - 2022/2023
+          Rafael Alberti - <time datetime="2022">2022</time>/<time
+            datetime="2023"
+          >
+            2023
+          </time>
         </p>
       </div>
     </footer>

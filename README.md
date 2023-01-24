@@ -31,7 +31,7 @@ Estos han sido los pasos seguidos en la elaboración de esta práctica.
 
 ### Pruebas
 
-Antes de comenzar a realizar modificaciones debemos hacer un listado de todos los posibles fallos de accesibilidad para poder ocuparnos de ellos de forma ordenada. Para ello usaremos [Wave](https://wave.webaim.org/) en cada página, y [Tawdis]() para recibir un informe general, dando los siguientes resultados:
+Antes de comenzar a realizar modificaciones debemos hacer un listado de todos los posibles fallos de accesibilidad para poder ocuparnos de ellos de forma ordenada. Para ello usaremos [Wave](https://wave.webaim.org/) en cada página, y [Tawdis](https://www.tawdis.net/) para recibir un informe general, dando los siguientes resultados:
 
 - Problemas generales
 
@@ -104,28 +104,50 @@ Las modificaciones han sido las siguientes:
 
 Las imágenes utilizadas en la web necesitan títulos en caso de ser importantes, la omisión en caso de ser decoración y texto alternativo por si falla esta. Además de forma interna hace falta incluir sus orígenes y estatus legal, disponible en el apartado de [Recursos ⚖️](#recursos-️)
 
+- Al unir imágenes y títulos en un mismo enlace, estos actúan de alt/label
+
 #### Enlaces
+
+Sus problemas se dividen en dos tipos, los mal colocados y los rotos. Los mal colocados se solucionaran de la siguiente manera:
+
+- Si hay dos enlaces al mismo sitio juntos se combinarán
+
+Los rotos serán reemplazados por su nombre y HTML tal que:
+
+| Link                    | Página                   |
+| ----------------------- | ------------------------ |
+| Colección               | coleccion.html           |
+| Actividades             | actividades.html         |
+| Revista                 | revista.html             |
+| Actividades en detalle  | act-detalle(nº).html     |
+| Exposiciones en detalle | exp-detalle(nº).html     |
+| Política de privacidad  | politica-privacidad.html |
+| Quiénes somos           | about.html               |
+| Cookies                 | cookies.html             |
+| Aviso Legal             | aviso-legal.html         |
 
 #### Tipos de etiqueta
 
 Si hay una sucesión de elementos relacionados entres si es mejor para la accesibilidad ponerlos en una lista que los agrupe. Como en:
 
 - Los idiomas, que además tendrían más sentido siendo botones. Para esto he cambiado también el CSS para eliminar la decoración de lista.
+- La barra de navegación
 
 ##### Encabezados
 
 Este problema requiere una reestructuración de las páginas siguiendo el orden de encabezados tal que:
 
 - Un h1 único por página
-- El orden de encabezados no salta ningún número (puede no comenzar por h1)
+- El orden de encabezados no salta ningún número
 
-También hace falta que todos los encabezados sean descriptivos de la sección que encabezan
-
-Consecuentemente han sido realizados los cambios siguientes:
+También hace falta que todos los encabezados sean descriptivos de la sección que encabezan. Consecuentemente han sido realizados los cambios siguientes:
 
 - Cambiado el título de los créditos de h6 a h5
+- Cambiado el título erróneo de Exposiciones actuales a Actividades actuales
 
 ##### Formularios
+
+Para reparar los inputs sin labels ponemos en estos un id que corresponda con el atributo for de su label correspondiente.
 
 ##### Otros
 
@@ -152,6 +174,8 @@ Para que los lectores de pantalla puedan interpretar correctamente nuestros dato
 Si hay una sucesión de elementos relacionados entres si es mejor para la accesibilidad ponerlos en una lista que los agrupe. Como en:
 
 - Los idiomas en el nav
+- El navbar
+- Las redes sociales
 
 #### Extra
 
@@ -163,6 +187,8 @@ Será necesario añadir el [atributo `lang`](https://www.w3schools.com/tags/att_
 También un [aviso JavaScript](https://www.w3schools.com/tags/tag_noscript.asp) (`<noscript>`) que aparecerá si no tienen Java Script activado. Y se ha comprobado que el video de YouTube tiene subtítulos. Otros cambios extra incluyen:
 
 - Eliminado número sin contexto ni comentarios en expo-detalle.html a falta de utilidad
+- Añadida aria-label al botón hamburguesa
+- Cambiado el placeholder de subscripción a la Newsletter para que esté en español
 
 ### Comprobación final
 

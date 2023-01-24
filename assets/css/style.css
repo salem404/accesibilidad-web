@@ -26,6 +26,24 @@ a:hover {
   color: var(--oscuro);
 }
 
+ul {
+  list-style: none;
+  display: flex;
+  align-items: stretch;
+}
+
+.rss-lista {
+  display: inline-flex;
+  gap: 1em;
+  text-align: center;
+  padding-right: 40px;
+}
+
+.list {
+  list-style: disc;
+  flex-direction: column;
+}
+
 h1,
 h2,
 h3,
@@ -71,6 +89,7 @@ header {
   list-style: none;
   display: flex;
   gap: 1em;
+  padding: 1em;
 }
 
 header > nav,
@@ -202,7 +221,8 @@ main {
 
 .detalle-cabecera h2,
 .detalle-cabecera span {
-  color: white;
+  color: black;
+  background: var(--principal-claro);
   width: 100%;
 }
 .detalle-cabecera button {
@@ -262,6 +282,7 @@ footer .navbar-nav {
   -ms-flex-direction: row;
   flex-direction: row;
 }
+
 footer.container-fluid {
   padding-right: 0px;
   padding-left: 0px;
@@ -280,6 +301,7 @@ footer.container-fluid {
 .creditos p {
   max-width: 800px;
   margin: 0 auto;
+  font-size: 0.9rem;
 }
 .creditos a {
   color: var(--principal);

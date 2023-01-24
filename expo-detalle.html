@@ -42,8 +42,10 @@
         </div>
       </div>
       <a href="index.html">
-        <!-- TODO: Add alt -->
-        <img src="assets/img/logo.png" />
+        <img
+          src="assets/img/logo.png"
+          alt="La Galería Ecléctica Galeria de Arte"
+        />
       </a>
       <nav class="navbar navbar-expand-lg navbar-light bg-verde-claro">
         <button
@@ -51,18 +53,30 @@
           type="button"
           data-toggle="collapse"
           data-target="#navbarNavAltMarkup"
+          aria-label="Acordeón navegador"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <!-- TODO: Make list and fix links-->
-            <a class="nav-item nav-link" href="#">Colección </a>
-            <a class="nav-item nav-link" href="exposiciones.html">
-              Exposiciones
-            </a>
-            <a class="nav-item nav-link" href="#">Actividades</a>
-            <a class="nav-item nav-link" href="#">Revista</a>
+            <ul>
+              <li>
+                <a class="nav-item nav-link" href="coleccion.html">Colección</a>
+              </li>
+              <li>
+                <a class="nav-item nav-link" href="exposiciones.html">
+                  Exposiciones
+                </a>
+              </li>
+              <li>
+                <a class="nav-item nav-link" href="actividades.html"
+                  >Actividades</a
+                >
+              </li>
+              <li>
+                <a class="nav-item nav-link" href="revista.html">Revista</a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -88,12 +102,12 @@
       <section id="proximas" class="actividades container">
         <div class="fila align-izquierda">
           <div class="tres-columnas">
-            <h4>
+            <h3>
               Del
               <time datetime="2018-12-2"> 2 de diciembre de 2018 </time>
               hasta el
               <time datetime="2019-4-17"> 17 de abril de 2019 </time>
-            </h4>
+            </h3>
             <button class="btn btn-secondary">Comprar entradas</button>
           </div>
           <div class="dos-tres-columnas">
@@ -195,43 +209,83 @@
       <div class="container pie">
         <h4>La Galería Ecléctica</h4>
         <div>
-          <adress>
+          <address>
             Plaza del Poblenou, 1<br />
             08018 Barcelona
-          </adress>
+          </address>
         </div>
         <div class="rrss">
-          <a href="#"><i class="fab fa-facebook-square"></i></a>
-          <a href="#"><i class="fab fa-twitter-square"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-youtube-square"></i></a>
+          <ul class="rss-lista">
+            <li>
+              <a href="https://www.facebook.com/" aria-label="Facebook"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" aria-label="Twitter"
+                ><i class="fab fa-twitter-square"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/" aria-label="Youtube"
+                ><i class="fab fa-youtube-square"></i
+              ></a>
+            </li>
+          </ul>
         </div>
+
         <form>
           <h4>Suscríbete a nuestra <span lang="en">Newsletter</span></h4>
           <div class="form-group">
             <input
               type="email"
               class="form-control"
-              placeholder="Enter email"
+              placeholder="Ingresa tu email"
+              aria-label="email"
             />
-            <!--TODO: Cambiar idioma del placeholder-->
           </div>
           <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" />
-            <label>Acepto la <a href="#">Política de privacidad </a></label>
+            <input type="checkbox" class="form-check-input" id="politicas" />
+
+            <label class="form-check-label" for="politicas">
+              Acepto la
+              <a href="politica-privacidad.html">Política de privacidad </a>
+            </label>
           </div>
           <button type="submit" class="btn btn-secondary">Registrarme</button>
         </form>
         <a href="index.html" class="logo">
-          <img src="assets/img/logo.png" />
+          <img
+            src="assets/img/logo.png"
+            alt="La Galería Ecléctica Galeria de Arte"
+          />
         </a>
         <nav class="navbar navbar-expand-lg navbar-light bg-verde-claro">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Quiénes somos</a>
-            <a class="nav-item nav-link" href="#">Política de Privacidad</a>
-            <a class="nav-item nav-link" href="#">Aviso Legal</a>
-            <a class="nav-item nav-link" href="#">Cookies</a>
-          </div>
+          <ul class="navbar-nav">
+            <li>
+              <a class="nav-item nav-link" href="about.html"> Quiénes somos </a>
+            </li>
+            <li>
+              <a class="nav-item nav-link" href="politica-privacidad.html">
+                Política de Privacidad
+              </a>
+            </li>
+            <li>
+              <a class="nav-item nav-link" href="aviso-legal.html">
+                Aviso Legal
+              </a>
+            </li>
+            <li>
+              <a class="nav-item nav-link" href="cookies.html" lang="en">
+                Cookies
+              </a>
+            </li>
+          </ul>
         </nav>
       </div>
       <div class="creditos">
@@ -247,8 +301,13 @@
           >. Fotografías,
           <a href="https://unsplash.com" lang="en">Unsplash</a> Actividad para
           comprobar la Accesibilidad Web, para el módulo de Diseño de Interfaces
-          Web. <abbr title="Instituto de Educación Secundaria">IES</abbr> Rafael
-          Alberti - 2022/2023
+          Web.
+          <abbr title="Instituto de Educación Secundaria">IES</abbr>
+          Rafael Alberti - <time datetime="2022">2022</time>/<time
+            datetime="2023"
+          >
+            2023
+          </time>
         </p>
       </div>
     </footer>
