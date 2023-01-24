@@ -162,7 +162,7 @@ EL formulario de donaciones ha sido reordenado para tener más sentido.
 
 ##### Tablas
 
-La tabla de la exposición en detalle ha sido cambiada usando la herramienta [HTML Table Generator](http://adamwills.github.io/csv-accessible-table/) la cual ha dividido la tabla en head y body, dividiendo la fila en titulo y contenido.
+Para poder mostrar correctamente las tablas hace falta vincular las celdas con sus títulos.
 
 ##### Otros
 
