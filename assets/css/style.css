@@ -331,4 +331,8 @@ footer.container-fluid {
     max-width: 100%;
     padding-left: 0%;
   }
+  ul {
+    display: block;
+    padding-right: 40px;
+  }
 }

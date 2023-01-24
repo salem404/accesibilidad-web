@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
+
   <body class="expo-detalle">
     <noscript>
       ¡Activa JavaScript para usar está página con todo su potencial!
@@ -48,35 +49,30 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-verde-claro">
         <button
           class="navbar-toggler"
-          type="button"
           data-toggle="collapse"
           data-target="#navbarNavAltMarkup"
           aria-label="Acordeón navegador"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <ul class="rss-lista">
+            <ul>
               <li>
-                <a href="https://www.facebook.com/" aria-label="Facebook"
-                  ><i class="fab fa-facebook-square" aria-hidden="true"></i
-                ></a>
+                <a class="nav-item nav-link" href="coleccion.html">Colección</a>
               </li>
               <li>
-                <a href="https://twitter.com/" aria-label="Twitter"
-                  ><i class="fab fa-twitter-square" aria-hidden="true"></i
-                ></a>
+                <a class="nav-item nav-link" href="exposiciones.html">
+                  Exposiciones
+                </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/" aria-label="Instagram"
-                  ><i class="fab fa-instagram" aria-hidden="true"></i
-                ></a>
+                <a class="nav-item nav-link" href="actividades.html">
+                  Actividades
+                </a>
               </li>
               <li>
-                <a href="https://www.youtube.com/" aria-label="Youtube"
-                  ><i class="fab fa-youtube-square" aria-hidden="true"></i
-                ></a>
+                <a class="nav-item nav-link" href="revista.html">Revista</a>
               </li>
             </ul>
           </div>
@@ -118,8 +114,6 @@
             </blockquote>
           </div>
           <div class="dos-tres-columnas">
-            <p></p>
-
             <p>
               <abbr title="La Galería Ecléctica">LAGaEC </abbr> tiene como
               objetivo la difusión de la cultura y se sostiene en base a
@@ -135,7 +129,6 @@
                   name="unaVez"
                   id="unaVez"
                   value="option1"
-                  checked
                 />
                 <label class="form-check-label" for="unaVez">
                   Una única vez
@@ -154,7 +147,6 @@
               <div class="form-group">
                 <label for="exampleFormControlSelect2">Importe</label>
                 <select
-                  multiple
                   class="form-control"
                   id="exampleFormControlSelect2"
                 >
@@ -169,10 +161,11 @@
               <div class="form-group">
                 <label for="importe">Otra cantidad</label>
                 <input
-                  type="password"
+                  type="number"
                   class="form-control"
                   placeholder="Escriba otro importe"
                   id="importe"
+                  min="0"
                 />
               </div>
               <hr />
@@ -185,12 +178,12 @@
                   placeholder="Escribe tu email"
                   id="email"
                 />
-                <small class="form-text text-muted">
+                <p class="form-text text-muted">
                   Nunca compartiremos su correo electrónico con nadie.
-                </small>
+                </p>
               </div>
               <div class="form-group">
-                <label for="nombre">Nombre </label>
+                <label for="nombre">Nombre</label>
                 <input
                   type="text"
                   class="form-control"
@@ -199,26 +192,26 @@
                 />
               </div>
               <div class="form-group">
-                <label for="apellidos">Apellidos </label>
+                <label for="apellidos">Apellidos</label>
                 <input
                   type="text"
                   class="form-control"
-                  placeholder="Tu apellidos"
+                  placeholder="Escribe tus apellidos"
                   id="apellidos"
                 />
               </div>
 
               <div class="form-group">
-                <label for="direccion_postal">Dirección postal </label>
+                <label for="direccion_postal">Dirección postal</label>
                 <input
                   type="text"
                   class="form-control"
-                  placeholder="Tu dirección postal"
+                  placeholder="Escribe tu dirección postal"
                   id="direccion_postal"
                 />
-                <small class="form-text text-muted">
+                <p class="form-text text-muted">
                   Nunca compartiremos su dirección con nadie.
-                </small>
+                </p>
               </div>
 
               <div class="form-group">
@@ -226,12 +219,12 @@
                 <input
                   type="tel"
                   class="form-control"
-                  placeholder="Teléfono"
+                  placeholder="Escribe tu teléfono"
                   id="telefono"
                 />
-                <small class="form-text text-muted">
+                <p class="form-text text-muted">
                   Nunca compartiremos su teléfono con nadie más.
-                </small>
+                </p>
               </div>
               <hr />
               <h3>Datos de pago</h3>
@@ -240,7 +233,7 @@
                 <input
                   type="number"
                   class="form-control"
-                  placeholder="Número de tarjeta"
+                  placeholder="Escribe el número de tarjeta"
                   id="tarjeta"
                 />
               </div>
@@ -304,23 +297,27 @@
         <div class="rrss">
           <ul class="rss-lista">
             <li>
-              <a href="https://www.facebook.com/" aria-label="Facebook">
+              <a href="https://www.facebook.com">
                 <span class="fab fa-facebook-square" aria-hidden="true"></span>
+                Facebook
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/" aria-label="Twitter">
+              <a href="https://twitter.com">
                 <span class="fab fa-twitter-square" aria-hidden="true"></span>
+                Twitter
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/" aria-label="Instagram">
+              <a href="https://www.instagram.com" aria-label="Instagram">
                 <span class="fab fa-instagram" aria-hidden="true"></span>
+                Instagram
               </a>
             </li>
             <li>
-              <a href="https://www.youtube.com/" aria-label="Youtube">
+              <a href="https://www.youtube.com" aria-label="Youtube">
                 <span class="fab fa-youtube-square" aria-hidden="true"></span>
+                Youtube
               </a>
             </li>
           </ul>
@@ -340,7 +337,6 @@
           </div>
           <div class="form-group form-check">
             <input type="checkbox" class="form-check-input" id="politicas" />
-
             <label class="form-check-label" for="politicas">
               Acepto la
               <a href="politica-privacidad.html">Política de privacidad </a>

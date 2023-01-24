@@ -150,6 +150,8 @@ También hace falta que todos los encabezados sean descriptivos de la sección q
 
 Para reparar los inputs sin labels ponemos en estos un id que corresponda con el atributo for de su label correspondiente. En caso de que no se pueda poner una label, se le añadirá un atributo title al input.
 
+Algunos tipos de inputs han sido cambiados para funcionar mejor con los datos que se quieren almacenar.
+
 ##### Otros
 
 Para que los lectores de pantalla puedan interpretar correctamente nuestros datos y presentarlos de la manera que el usuario elija, aparte de especificar el idioma general, hace falta mostrar de que tipo son, como:
