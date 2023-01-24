@@ -277,21 +277,23 @@
                   />
                 </div>
               </fieldset>
-              <div class="custom-control custom-checkbox">
-                <input
-                  type="checkbox"
-                  class="custom-control-input"
-                  id="acepta"
-                />
-                <label class="custom-control-label" for="acepta">
-                  <p>
-                    Acepto expresamente la
-                    <a href="politica-proteccion.html">
-                      política de protección de datos
-                    </a>
-                  </p>
-                </label>
-              </div>
+              <fieldset>
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="acepta"
+                  />
+                  <label class="custom-control-label" for="acepta">
+                    <p>
+                      Acepto expresamente la
+                      <a href="politica-proteccion.html">
+                        política de protección de datos
+                      </a>
+                    </p>
+                  </label>
+                </div>
+              </fieldset>
               <button type="submit" class="btn btn-secondary">Enviar</button>
             </form>
           </div>
@@ -350,11 +352,13 @@
             />
           </div>
           <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="politicas" />
-            <label class="form-check-label" for="politicas">
-              Acepto la
-              <a href="politica-privacidad.html">Política de privacidad </a>
-            </label>
+            <fieldset>
+              <input type="checkbox" class="form-check-input" id="politicas" />
+              <label class="form-check-label" for="politicas">
+                Acepto la
+                <a href="politica-privacidad.html">Política de privacidad </a>
+              </label>
+            </fieldset>
           </div>
           <button type="submit" class="btn btn-secondary">Registrarme</button>
         </form>
