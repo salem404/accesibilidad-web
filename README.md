@@ -216,7 +216,7 @@ Tras todas las modificaciones si volvemos a pasar las páginas de la web por [Ta
 
 #### Exposiciones
 
-En esta página me daba un error inusual al marcar como error encabezados seguidos a pesar de estar en distintas secciones.
+En esta página me daba un error inusual al marcar como error encabezados seguidos a pesar de estar en distintas secciones. Por lo que añadí el botón de ver más en todas.
 
 ![Resultado sobre exposiciones](assets/img/tawdisExpo.png)
 
