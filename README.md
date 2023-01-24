@@ -131,6 +131,7 @@ Los rotos serán reemplazados por su nombre y HTML tal que:
 | Quiénes somos           | about.html               |
 | Cookies                 | cookies.html             |
 | Aviso Legal             | aviso-legal.html         |
+| Protección de datos     | polita-proteccion.html   |
 
 #### Tipos de etiqueta
 
