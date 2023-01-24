@@ -121,35 +121,41 @@
               manifestaciones culturales de todo tipo. Gracias por tu apoyo.
             </p>
             <form>
-              <h2>Cantidad del donativo (<abbr title="Euros">EUR</abbr>)</h2>
-              <div class="form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="unaVez"
-                  id="unaVez"
-                  value="option1"
-                />
-                <label class="form-check-label" for="unaVez">
-                  Una única vez
-                </label>
-              </div>
-              <div class="form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="mensual"
-                  id="mensual"
-                  value="option2"
-                />
-                <label class="form-check-label" for="mensual"> Mensual </label>
-              </div>
+              <fieldset>
+                <legend>
+                  <h2>
+                    Cantidad del donativo (<abbr title="Euros">EUR</abbr>)
+                  </h2>
+                </legend>
+                <div class="form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="unaVez"
+                    id="unaVez"
+                    value="option1"
+                    checked="checked"
+                  />
+                  <label class="form-check-label" for="unaVez">
+                    Una única vez
+                  </label>
+                </div>
+                <div class="form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="mensual"
+                    id="mensual"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="mensual">
+                    Mensual
+                  </label>
+                </div>
+              </fieldset>
               <div class="form-group">
                 <label for="exampleFormControlSelect2">Importe</label>
-                <select
-                  class="form-control"
-                  id="exampleFormControlSelect2"
-                >
+                <select class="form-control" id="exampleFormControlSelect2">
                   <option>5€</option>
                   <option>10€</option>
                   <option>20€</option>
@@ -169,102 +175,108 @@
                 />
               </div>
               <hr />
-              <h3>Datos de facturación</h3>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Escribe tu email"
-                  id="email"
-                />
-                <p class="form-text text-muted">
-                  Nunca compartiremos su correo electrónico con nadie.
-                </p>
-              </div>
-              <div class="form-group">
-                <label for="nombre">Nombre</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Escribe tu nombre "
-                  id="nombre"
-                />
-              </div>
-              <div class="form-group">
-                <label for="apellidos">Apellidos</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Escribe tus apellidos"
-                  id="apellidos"
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="direccion_postal">Dirección postal</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Escribe tu dirección postal"
-                  id="direccion_postal"
-                />
-                <p class="form-text text-muted">
-                  Nunca compartiremos su dirección con nadie.
-                </p>
-              </div>
-
-              <div class="form-group">
-                <label for="telefono">Teléfono </label>
-                <input
-                  type="tel"
-                  class="form-control"
-                  placeholder="Escribe tu teléfono"
-                  id="telefono"
-                />
-                <p class="form-text text-muted">
-                  Nunca compartiremos su teléfono con nadie más.
-                </p>
-              </div>
+              <fieldset>
+                <legend>
+                  <h3>Datos de facturación</h3>
+                </legend>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Escribe tu email"
+                    id="email"
+                  />
+                  <p class="form-text text-muted">
+                    Nunca compartiremos su correo electrónico con nadie.
+                  </p>
+                </div>
+                <div class="form-group">
+                  <label for="nombre">Nombre</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Escribe tu nombre "
+                    id="nombre"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="apellidos">Apellidos</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Escribe tus apellidos"
+                    id="apellidos"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="direccion_postal">Dirección postal</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Escribe tu dirección postal"
+                    id="direccion_postal"
+                  />
+                  <p class="form-text text-muted">
+                    Nunca compartiremos su dirección con nadie.
+                  </p>
+                </div>
+                <div class="form-group">
+                  <label for="telefono">Teléfono </label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="Escribe tu teléfono"
+                    id="telefono"
+                  />
+                  <p class="form-text text-muted">
+                    Nunca compartiremos su teléfono con nadie más.
+                  </p>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="anonimo"
+                  />
+                  <label class="custom-control-label" for="anonimo">
+                    Hago este donativo de manera anónima
+                  </label>
+                </div>
+              </fieldset>
               <hr />
-              <h3>Datos de pago</h3>
-              <div class="form-group">
-                <label for="tarjeta">Número tarjeta</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  placeholder="Escribe el número de tarjeta"
-                  id="tarjeta"
-                />
-              </div>
-              <div class="form-group">
-                <label for="fecha_expiracion">Fecha de expiración</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="MM/AA"
-                  id="fecha_expiracion"
-                />
-              </div>
-              <div class="form-group">
-                <label for="verificacion">Código de verificación</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  placeholder="CCV"
-                  id="verificacion"
-                />
-              </div>
-              <div class="custom-control custom-checkbox">
-                <input
-                  type="checkbox"
-                  class="custom-control-input"
-                  id="anonimo"
-                />
-                <label class="custom-control-label" for="anonimo">
-                  Hago este donativo de manera anónima
-                </label>
-              </div>
+              <fieldset>
+                <legend>
+                  <h3>Datos de pago</h3>
+                </legend>
+                <div class="form-group">
+                  <label for="tarjeta">Número tarjeta</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Escribe el número de tarjeta"
+                    id="tarjeta"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="fecha_expiracion">Fecha de expiración</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="MM/AA"
+                    id="fecha_expiracion"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="verificacion">Código de verificación</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="CCV"
+                    id="verificacion"
+                  />
+                </div>
+              </fieldset>
               <div class="custom-control custom-checkbox">
                 <input
                   type="checkbox"
@@ -272,10 +284,12 @@
                   id="acepta"
                 />
                 <label class="custom-control-label" for="acepta">
-                  Acepto expresamente la
-                  <a href="politica-privacidad.html">
-                    política de protección de datos
-                  </a>
+                  <p>
+                    Acepto expresamente la
+                    <a href="politica-privacidad.html">
+                      política de protección de datos
+                    </a>
+                  </p>
                 </label>
               </div>
               <button type="submit" class="btn btn-secondary">Enviar</button>

@@ -20,9 +20,14 @@ Práctica - Accesibilidad Web
       - [Tipos de etiqueta](#tipos-de-etiqueta)
         - [Encabezados](#encabezados)
         - [Formularios](#formularios)
+        - [Tablas](#tablas)
         - [Otros](#otros)
       - [Extra](#extra)
     - [Comprobación final](#comprobación-final)
+      - [Index](#index)
+      - [Exposiciones](#exposiciones)
+      - [Exposiciones en detalle](#exposiciones-en-detalle)
+      - [Donaciones](#donaciones)
   - [Recursos ⚖️](#recursos-️)
   - [Lenguajes y Tecnologías 💻](#lenguajes-y-tecnologías-)
 
@@ -152,6 +157,12 @@ Para reparar los inputs sin labels ponemos en estos un id que corresponda con el
 
 Algunos tipos de inputs han sido cambiados para funcionar mejor con los datos que se quieren almacenar.
 
+EL formulario de donaciones ha sido reordenado para tener más sentido.
+
+##### Tablas
+
+La tabla de la exposición en detalle ha sido cambiada usando la herramienta [HTML Table Generator](http://adamwills.github.io/csv-accessible-table/) la cual ha dividido la tabla en head y body, dividiendo la fila en titulo y contenido.
+
 ##### Otros
 
 Para que los lectores de pantalla puedan interpretar correctamente nuestros datos y presentarlos de la manera que el usuario elija, aparte de especificar el idioma general, hace falta mostrar de que tipo son, como:
@@ -193,10 +204,29 @@ También un [aviso JavaScript](https://www.w3schools.com/tags/tag_noscript.asp) 
 - Añadida aria-label al botón hamburguesa
 - Cambiado el placeholder de subscripción a la Newsletter para que esté en español
 - Los iconos con fontawesome han sido cambiados siguiendo sus [pautas de accesibilidad](https://fontawesome.com/docs/web/dig-deeper/accessibility#manually-make-your-icons-accessible)
+- Añadido título al iframe
 
 ### Comprobación final
 
-Tras todas las modificaciones
+Tras todas las modificaciones si volvemos a pasar las páginas de la web por [Tawdis](https://www.tawdis.net/) nos dan los siguientes resultados:
+
+#### Index
+
+![Resultado sobre el index](assets/img/tawdisIndex.png)
+
+#### Exposiciones
+
+En esta página me daba un error inusual al marcar como error encabezados seguidos a pesar de estar en distintas secciones.
+
+![Resultado sobre exposiciones](assets/img/tawdisExpo.png)
+
+#### Exposiciones en detalle
+
+![Resultado sobre exposiciones en detalle](assets/img/tawdisExpoDet.png)
+
+#### Donaciones
+
+![Resultado sobre donaciones](assets/img/tawdisDona.png)
 
 ## Recursos ⚖️
 
@@ -218,6 +248,7 @@ Tras todas las modificaciones
 | expo-vangogh.jpg                       | Autorretrato con sombrero de paja | Vincent van Gogh  | The Metropolitan Museum | Dominio público  |
 | LAGaEC.png                             |                                   | Alejandro Carmona |                         |                  |
 | logo.png                               |                                   | Alejandro Carmona |                         |                  |
+| tawdisIndex.png                        | Captura de pantalla test index    |                   | Captura de pantalla     |                  |
 
 ## Lenguajes y Tecnologías 💻
 
